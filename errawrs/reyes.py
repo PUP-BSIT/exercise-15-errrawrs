@@ -1,4 +1,12 @@
 import datetime
+import os
+
+def clear_screen():
+    os.system("cls")
+
+def pause_print():
+    input("Press enter to continue...")
+
 class AttendanceManagement:
     records = {}
     present_count = {}
@@ -102,3 +110,7 @@ class AttendanceManagement:
                 break
             else:
                 print("Invalid choice. Please try again.")
+            
+            clear_screen()
+            pause_print()
+
