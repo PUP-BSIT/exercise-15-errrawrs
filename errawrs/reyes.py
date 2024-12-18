@@ -89,7 +89,10 @@ class AttendanceManagement:
                 person_name = input("Enter the person's name: ")
                 attendance_date = self.get_attendance(person_name)
                 if attendance_date is not None:
-                    print(f"{person_name}'s Attendance: {attendance_date}")
+                    print(f"{person_name}")
+                    print("Attendance:")
+                    for attendance in attendance_date:
+                        print(f"{attendance}")
             elif choice == "4":
                 self.summarize_attendance()
             elif choice == "5":
