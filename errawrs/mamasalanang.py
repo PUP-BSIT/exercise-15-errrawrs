@@ -33,8 +33,8 @@ class Mamasalanang:
         print(f"Now I am studying {self.major}.")
 
     def show_info(self):
-        print(f"Name: {self.name}, Age: {self.age}, 
-              Major: {self.major}, School: {self.school}")
+        print(f"Name: {self.name}, Age: {self.age},")
+        print(f"Major: {self.major}, School: {self.school}")
 
     def display_menu(self):
         while True:
