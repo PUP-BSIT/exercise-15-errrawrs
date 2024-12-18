@@ -1,5 +1,7 @@
 from errawrs.mamasalanang import Mamasalanang
 from errawrs.victorioso import InventoryManager
+from errawrs.mosquito import BasicMath
+from errawrs.delumen import Car
 from errawrs.reyes import AttendanceManagement
 
 def menu_members():
@@ -18,12 +20,16 @@ def main_function():
         choice = int(input("Enter your Choice: "))
 
         if choice == 1:
-            print("Ivan")
+            delumen = Car()
+            delumen.menu()
         elif choice == 2:
             student_instance = Mamasalanang()
             student_instance.display_menu()
         elif choice == 3:
-            print("Michael")
+            print("\n")
+
+            michael = BasicMath()
+            michael.display_menu()
         elif choice == 4:
             reyes = AttendanceManagement()
             reyes.get_menu()
