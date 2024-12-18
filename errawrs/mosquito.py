@@ -10,7 +10,7 @@ class BasicMath:
 
         print("\n")
 
-    def sum(self):
+    def add(self):
         self.total = self.value_1 + self.value_2
 
         print(f"{self.value_1} + {self.value_2} = {self.total}")
@@ -29,10 +29,13 @@ class BasicMath:
         print("\n")
     
     def divide(self):
-        self.total = self.value_1 / self.value_2
+        try:
+            self.total = self.value_1 / self.value_2
 
-        print(f"{self.value_1} / {self.value_2} = {self.total}")
-        print("\n")
+            print(f"{self.value_1} / {self.value_2} = {self.total}")
+            print("\n")
+        except ZeroDivisionError:
+            print("zero can't be divided by zero")
 
     def display_menu(self):
         math = BasicMath()
@@ -49,12 +52,16 @@ class BasicMath:
 
             if choice == "1":
                 print("\n")
-
-                math.get_number()
+                try:
+                    math.get_number()
+                except ValueError:
+                    print("Enter a valid value")
+                
+                print("\n")
             elif choice == "2":
                 print("\n")
 
-                math.sum()
+                math.add()
             elif choice == "3":
                 print("\n")
 
@@ -67,6 +74,8 @@ class BasicMath:
                 print("\n")
 
                 math.divide()
+                
+                print("\n")
             elif choice == "6":
                 print("Exiting...")
                 print("\n")
