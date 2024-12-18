@@ -14,44 +14,44 @@ class InventoryManager:
         self.curr_cap = 0
 
     def add_item(self, item_name, quanti):
-        item_name_lower = item_name.lower()
+        item_name_lwr = item_name.lower()
 
         if self.curr_cap + quanti > MAX_CAP:
             print(f"Cannot add {quanti} {item_name}(s). Exceeds max capacity.")
             return
 
-        if item_name_lower in self.invntry:
-            self.invntry[item_name_lower] += quanti
+        if item_name_lwr in self.invntry:
+            self.invntry[item_name_lwr] += quanti
         else:
-            self.invntry[item_name_lower] = quanti
+            self.invntry[item_name_lwr] = quanti
 
         self.curr_cap += quanti
         print(f"{quanti} {item_name}(s) have been added.")
 
     def remove_item(self, item_name):
-        item_name_lower = item_name.lower()
+        item_name_lwr = item_name.lower()
 
-        if item_name_lower in self.invntry:
-            self.curr_cap -= self.invntry[item_name_lower]
-            del self.invntry[item_name_lower]
+        if item_name_lwr in self.invntry:
+            self.curr_cap -= self.invntry[item_name_lwr]
+            del self.invntry[item_name_lwr]
             print(f"{item_name} has been removed from the inventory.")
         else:
             print(f"{item_name} is not in the inventory.")
 
     def update_item_quanti(self, item_name, new_quanti):
-        item_name_lower = item_name.lower()
+        item_name_lwr = item_name.lower()
 
-        if item_name_lower not in self.invntry:
+        if item_name_lwr not in self.invntry:
             print(f"{item_name} is not in the inventory.")
             return
 
-        if self.curr_cap - self.invntry[item_name_lower] + new_quanti > MAX_CAP:
+        if self.curr_cap - self.invntry[item_name_lwr] + new_quanti > MAX_CAP:
             print(f"Cannot update {item_name}. Exceeds max capacity.")
             return
 
-        self.curr_cap = (self.curr_cap - self.invntry[item_name_lower] +
+        self.curr_cap = (self.curr_cap - self.invntry[item_name_lwr] +
                          new_quanti)
-        self.invntry[item_name_lower] = new_quanti
+        self.invntry[item_name_lwr] = new_quanti
         print(f"The quantity of {item_name} has been updated to {new_quanti}.")
 
     def view_inventory(self):
@@ -63,11 +63,11 @@ class InventoryManager:
                 print(f"- {item_name.capitalize()}: {quanti}")
 
     def search_item(self, item_name):
-        item_name_lower = item_name.lower()
+        item_name_lwr = item_name.lower()
 
-        if item_name_lower in self.invntry:
+        if item_name_lwr in self.invntry:
             print(f"{item_name} is in the inventory with a quantity "
-                  f"of {self.invntry[item_name_lower]}.")
+                  f"of {self.invntry[item_name_lwr]}.")
         else:
             print(f"{item_name} is not in the inventory.")
 
