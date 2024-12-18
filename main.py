@@ -1,6 +1,6 @@
 from errawrs.mamasalanang import Mamasalanang
 from errawrs.victorioso import InventoryManager
-
+from errawrs.delumen import Car
 def menu_members():
     print("Welcome! Select a Person!")
     print("1. Ivan Delumen")
@@ -17,7 +17,8 @@ def main_function():
         choice = int(input("Enter your Choice: "))
 
         if choice == 1:
-            print("Ivan")
+            delumen = Car()
+            delumen.menu()
         elif choice == 2:
             student_instance = Mamasalanang()
             student_instance.display_menu()
