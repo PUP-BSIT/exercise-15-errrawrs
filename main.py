@@ -21,7 +21,7 @@ def main_function():
         elif choice == 2:
             print("Gerald")
             student_instance = Mamasalanang()
-            student_instance.menu()
+            student_instance.display_menu()
         elif choice == 3:
             print("Michael")
         elif choice == 4:

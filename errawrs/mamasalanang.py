@@ -21,7 +21,7 @@ class Mamasalanang:
         print(f"Hello, my name is {self.name}.")
         print(f"And I am a student at {self.school}.")
 
-    def study(self):
+    def get_study(self):
         print(f"I am studying {self.major} at {self.school}.")
 
     def celebrate_birthday(self):
@@ -51,7 +51,7 @@ class Mamasalanang:
             if choice == "1":
                 self.greet()
             elif choice == "2":
-                self.study()
+                self.get_study()
             elif choice == "3":
                 self.celebrate_birthday()
             elif choice == "4":
