@@ -1,5 +1,6 @@
 from errawrs.mamasalanang import Mamasalanang
 from errawrs.victorioso import InventoryManager
+from errawrs.reyes import AttendanceManagement
 
 def menu_members():
     print("Welcome! Select a Person!")
@@ -24,6 +25,8 @@ def main_function():
         elif choice == 3:
             print("Michael")
         elif choice == 4:
+            reyes = AttendanceManagement()
+            reyes.get_menu()
             print("Simone")
         elif choice == 5:
             victorioso = InventoryManager()
