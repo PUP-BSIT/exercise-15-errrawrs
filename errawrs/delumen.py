@@ -19,7 +19,7 @@ class Car:
         self.price = price
 
     def set_year(self, year):
-        self.year = year
+            self.year = year
 
     def show_car_info(self):
         print("Car Info:")
@@ -56,12 +56,18 @@ class Car:
                 self.set_color(color)
 
             elif choice == "4":
-                price = int(input("Enter the price: "))
-                self.set_price(price)
+                try:
+                    price = int(input("Enter the price: "))
+                    self.set_price(price)
+                except ValueError:
+                    print("Invalid input! Please enter a valid number for price.")
 
             elif choice == "5":
-                year = int(input("Enter the year: "))
-                self.set_year(year)
+                try:
+                    year = int(input("Enter the price: "))
+                    self.set_year(year)
+                except ValueError:
+                    print("Invalid input! Please enter a valid number for year.")
 
             elif choice == "6":
                 self.show_car_info()
@@ -72,6 +78,3 @@ class Car:
 
             else:
                 print("Invalid choice, please try again.")
-
-my_car = Car()
-my_car.menu()
