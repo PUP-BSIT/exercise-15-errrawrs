@@ -32,8 +32,9 @@ class Car:
         if self.years:
             for year in self.years:
                 print(year)
-        else:
-            print("No years available.") 
+            
+            return 
+        print("No years available.") 
 
     def menu(self):
         while True:
@@ -77,6 +78,6 @@ class Car:
                 break
             else:
                 print("Invalid choice, please try again.")
-                
+
 my_menu = Car()
 my_menu.menu()
