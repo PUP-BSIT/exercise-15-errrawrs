@@ -1,4 +1,3 @@
-from errawrs.victorioso import InventoryManager
 from errawrs.mamasalanang import Mamasalanang
 
 def menu_members():
@@ -27,8 +26,7 @@ def main_function():
         elif choice == 4:
             print("Simone")
         elif choice == 5:
-            victorioso = InventoryManager()
-            victorioso.display_menu()
+            print("Ivan")
         elif choice == 6:
             print("Exiting")
             break
