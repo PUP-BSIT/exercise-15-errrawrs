@@ -1,10 +1,10 @@
 import datetime
 import os
 
-def clrscr():
+def clear_screen():
     os.system("cls")
 
-def pause():
+def pause_print():
     input("Press enter to continue...")
 
 class AttendanceManagement:
@@ -111,6 +111,6 @@ class AttendanceManagement:
             else:
                 print("Invalid choice. Please try again.")
             
-            clrscr()
-            pause()
+            clear_screen()
+            pause_print()
 
