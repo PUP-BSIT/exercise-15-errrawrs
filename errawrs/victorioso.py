@@ -73,7 +73,9 @@ class InventoryManager:
 
     def display_menu(self):
         while True:
-            print("\nInventory Manager:")
+            print("==================================")
+            print("||      Inventory Manager       ||")
+            print("==================================")
             print("1. Add Item")
             print("2. Remove Item")
             print("3. Update Item quantity")
