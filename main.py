@@ -18,7 +18,6 @@ def main_function():
         if choice == 1:
             print("Ivan")
         elif choice == 2:
-            print("Gerald")
             student_instance = Mamasalanang()
             student_instance.display_menu()
         elif choice == 3:
@@ -26,7 +25,7 @@ def main_function():
         elif choice == 4:
             print("Simone")
         elif choice == 5:
-            print("Ivan")
+            print("Daniel")
         elif choice == 6:
             print("Exiting")
             break
@@ -34,4 +33,3 @@ def main_function():
             print("Invalid Choice")
 
 main_function()
-
