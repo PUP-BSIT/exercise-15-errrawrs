@@ -2,28 +2,29 @@ class Mamasalanang:
     def __init__(self):
         self.name = "Gerald Mamasalanang"
         self.age = 19
-        self.major = "Information Technology" 
-        self.school = "PUP Taguig"  
+        self.major = "Information Technology"
+        self.school = "PUP Taguig"
 
-    def name_property(self):
+    def get_name(self):
         return self.name
 
-    def age_property(self):
+    def get_age(self):
         return self.age
 
-    def major_property(self):
+    def get_major(self):
         return self.major
 
-    def school_property(self):
+    def get_school(self):
         return self.school
 
     def greet(self):
-        print(f"Hello, my name is {self.name} and I am a student at {self.school}.")
+        print(f"Hello, my name is {self.name}.")
+        print(f"And I am a student at {self.school}.")
 
     def study(self):
         print(f"I am studying {self.major} at {self.school}.")
 
-    def birthday(self):
+    def celebrate_birthday(self):
         self.age += 1
         print(f"Happy birthday! You are now {self.age} years old.")
 
@@ -31,34 +32,34 @@ class Mamasalanang:
         self.major = new_major
         print(f"Now I am studying {self.major}.")
 
-    def info(self):
-        print(f"Name: {self.name}, Age: {self.age}, Major: {self.major}, School: {self.school}")
+    def show_info(self):
+        print(f"Name: {self.name}, Age: {self.age}, 
+              Major: {self.major}, School: {self.school}")
 
-    def menu(self):
+    def display_menu(self):
         while True:
             print("\nMenu:")
             print("1. Greet")
             print("2. Study")
-            print("3. Birthday")
+            print("3. Celebrate Birthday")
             print("4. Change Major")
-            print("5. Info")
+            print("5. Show Info")
             print("6. Exit")
-            
+
             choice = input("Select an option: ")
-            
+
             if choice == "1":
                 self.greet()
             elif choice == "2":
                 self.study()
             elif choice == "3":
-                self.birthday()
+                self.celebrate_birthday()
             elif choice == "4":
                 new_major = input("Enter the new major: ")
                 self.change_major(new_major)
             elif choice == "5":
-                self.info()
+                self.show_info()
             elif choice == "6":
                 break
             else:
                 print("Invalid choice. Please try again.")
-
