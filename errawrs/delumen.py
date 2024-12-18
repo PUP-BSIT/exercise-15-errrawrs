@@ -4,7 +4,7 @@ class Car:
     model = ""
     color = ""
     price = 0
-    year = 0
+    years = []
         
     def get_brand(self, brand):
         self.brand = brand
@@ -19,7 +19,7 @@ class Car:
         self.price = price
 
     def get_year(self, year):
-        self.year = year
+        self.years.append(year)
 
     def show_car_info(self):
         print("Car Info:")
@@ -27,7 +27,13 @@ class Car:
         print("Model:", self.model)
         print("Color:", self.color)
         print("Price:", self.price)
-        print("Year:", self.year)
+        print("Year(s):")
+        
+        if self.years:
+            for year in self.years:
+                print(year)
+        else:
+            print("No years available.") 
 
     def menu(self):
         while True:
@@ -71,3 +77,6 @@ class Car:
                 break
             else:
                 print("Invalid choice, please try again.")
+                
+my_menu = Car()
+my_menu.menu()
