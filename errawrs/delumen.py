@@ -6,20 +6,20 @@ class Car:
     price = 0
     year = 0
         
-    def set_brand(self, brand):
+    def get_brand(self, brand):
         self.brand = brand
-   
-    def set_model(self, model):
+
+    def get_model(self, model):
         self.model = model
 
-    def set_color(self, color):
+    def get_color(self, color):
         self.color = color
 
-    def set_price(self, price):
+    def get_price(self, price):
         self.price = price
 
-    def set_year(self, year):
-            self.year = year
+    def get_year(self, year):
+        self.year = year
 
     def show_car_info(self):
         print("Car Info:")
@@ -32,7 +32,7 @@ class Car:
     def menu(self):
         while True:
 
-            print("\n Car:")
+            print("\n Car List:")
             print("1. Brand: ")
             print("2. Model: ")
             print("3. Color: ")
