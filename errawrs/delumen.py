@@ -32,7 +32,7 @@ class Car:
     def menu(self):
         while True:
 
-            print("\n Car List:")
+            print("\n Car Menu:")
             print("1. Brand: ")
             print("2. Model: ")
             print("3. Color: ")
@@ -45,36 +45,29 @@ class Car:
 
             if choice == "1":
                 brand = input("Enter the brand: ")
-                self.set_brand(brand)
-
+                self.get_brand(brand)
             elif choice == "2":
                 model = input("Enter the model: ")
-                self.set_model(model)
-            
+                self.get_model(model)
             elif choice == "3":
                 color = input("Enter the color: ")
-                self.set_color(color)
-
+                self.get_color(color)
             elif choice == "4":
                 try:
                     price = int(input("Enter the price: "))
-                    self.set_price(price)
+                    self.get_price(price)
                 except ValueError:
-                    print("Invalid input! Please enter a valid number for price.")
-
+                    print("Invalid input! Please enter a valid number.")
             elif choice == "5":
                 try:
-                    year = int(input("Enter the price: "))
-                    self.set_year(year)
+                    year = int(input("Enter the year: "))
+                    self.get_year(year)
                 except ValueError:
-                    print("Invalid input! Please enter a valid number for year.")
-
+                    print("Invalid input! Please enter a valid number.")
             elif choice == "6":
                 self.show_car_info()
-
             elif choice == "7":
                 print("Exiting the menu.")
                 break
-
             else:
                 print("Invalid choice, please try again.")
