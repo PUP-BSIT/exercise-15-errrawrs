@@ -5,13 +5,15 @@ from errawrs.delumen import Car
 from errawrs.reyes import AttendanceManagement
 
 def menu_members():
-    print("Welcome! Select a Person!")
-    print("1. Ivan Delumen")
-    print("2. Gerald Mamasalanang")
-    print("3. Michael Angelo Mosquito")
-    print("4. Simone Jake Reyes")
-    print("5. Daniel Victorioso")
-    print("6. Exit")
+    print("==================================")
+    print("||   Welcome! Select a Person!  ||")
+    print("==================================")
+    print("[1] Ivan Delumen")
+    print("[2] Gerald Mamasalanang")
+    print("[3] Michael Angelo Mosquito")
+    print("[4] Simone Jake Reyes")
+    print("[5] Daniel Victorioso")
+    print("[6] Exit")
 
 def main_function():
     while True:
