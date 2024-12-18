@@ -19,27 +19,25 @@ def main_function():
     while True:
         menu_members()
 
-        choice = int(input("Enter your Choice: "))
+        choice = input("Enter your Choice: ")
 
-        if choice == 1:
+        if choice == '1':
             delumen = Car()
             delumen.menu()
-        elif choice == 2:
+        elif choice == '2':
             student_instance = Mamasalanang()
             student_instance.display_menu()
-        elif choice == 3:
-            print("\n")
-
+        elif choice == '3':
             michael = BasicMath()
             michael.display_menu()
-        elif choice == 4:
+        elif choice == '4':
             reyes = AttendanceManagement()
             reyes.get_menu()
             print("Simone")
-        elif choice == 5:
+        elif choice == '5':
             victorioso = InventoryManager()
             victorioso.display_menu()
-        elif choice == 6:
+        elif choice == '6':
             print("Exiting")
             break
         else:
