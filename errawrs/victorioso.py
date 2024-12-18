@@ -73,8 +73,6 @@ class InventoryManager:
 
     def display_menu(self):
         while True:
-            clrscr()
-
             print("\nInventory Manager:")
             print("1. Add Item")
             print("2. Remove Item")
@@ -114,3 +112,4 @@ class InventoryManager:
                 print("Invalid choice. Please try again.")
             
             pause()
+            clrscr()
