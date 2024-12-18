@@ -111,6 +111,7 @@ class AttendanceManagement:
             else:
                 print("Invalid choice. Please try again.")
             
-            clear_screen()
             pause_print()
+            clear_screen()
+            
 
