@@ -2,6 +2,7 @@ from errawrs.mamasalanang import Mamasalanang
 from errawrs.victorioso import InventoryManager
 from errawrs.mosquito import BasicMath
 from errawrs.delumen import Car
+from errawrs.reyes import AttendanceManagement
 
 def menu_members():
     print("Welcome! Select a Person!")
@@ -30,6 +31,8 @@ def main_function():
             michael = BasicMath()
             michael.display_menu()
         elif choice == 4:
+            reyes = AttendanceManagement()
+            reyes.get_menu()
             print("Simone")
         elif choice == 5:
             victorioso = InventoryManager()
